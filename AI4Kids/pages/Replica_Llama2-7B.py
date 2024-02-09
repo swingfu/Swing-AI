@@ -3,7 +3,7 @@ import os
 import replicate
 
 
-st.title("Try Llama2 for tutoring! 🦙 ") 
+st.title("Try Llama2-7B for tutoring! 🦙 ") 
 
 # Set the Replicate API token 
 with st.sidebar:
