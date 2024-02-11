@@ -25,7 +25,7 @@ Date: Feb 9th 2024
 - **Unique features.**
     - **Caching**.
         
-        ![caching](images/Untitled.png)
+        ![caching](images/caching.png)
         
     - **Session State.**
         - Caching associates stored values to specific functions and inputs. Cached values are accessible to all users across all sessions.
