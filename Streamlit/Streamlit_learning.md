@@ -168,7 +168,7 @@ msg = k1['message']['content']
     
     - edit Secret key in settings
     
-    ![secretes](images/secretes.png)
+    ![secrets](images/secrets.png)
     
 
 ---
