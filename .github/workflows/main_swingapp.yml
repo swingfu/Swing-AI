@@ -75,5 +75,5 @@ jobs:
         with:
           app-name: 'swingapp'
           slot-name: 'Production'
-          entry-file: 'Streamlit/LLMchatbots/Home.py'
+          start-up-command: 'streamlit run Streamlit/LLMchatbots/Home.py'
           
