@@ -8,9 +8,9 @@ st.title("Try Llama2-7B for tutoring! 🦙 ")
 # Set the Replicate API token 
 with st.sidebar:
     st.write('This chatbot is created using the open-source Llama2-7b/13b, using the API hosted on Replicate platform')
-    if 'REPLICATE_API_TOKEN' in st.secrets:
+    replicate_api = os.getenv('REPLICATE_API_TOKEN')
+    if replicate_api != None:
         st.success('API key already provided!', icon='✅')
-        replicate_api = os.getenv('REPLICATE_API_TOKEN')
     else:
         replicate_api = st.text_input('Enter Replicate API token:', key="llama_replicate_key", type='password')
         if not (replicate_api.startswith('r8_') and len(replicate_api)==40):
