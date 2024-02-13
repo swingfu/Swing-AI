@@ -6,7 +6,7 @@ import streamlit as st
 
 st.title("Try Llama2-70B for tutoring! 🦙 ") 
 
-# Set the Replicate API token 
+# Set the Azure API token 
 with st.sidebar:
     st.write('This chatbot is created using the open-source Llama2-70b, using the API hosted on Azure AI platform')
     if 'AZURE_API_KEY' in st.secrets:
