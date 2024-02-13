@@ -1,5 +1,6 @@
 import streamlit as st
 import openai
+import os
 
 
 st.title("Try ChatGPT for tutoring! 🤖️ ") 
@@ -8,7 +9,7 @@ st.title("Try ChatGPT for tutoring! 🤖️ ")
 openai.api_type = "azure"
 openai.base_url = "https://ai4kidseus2-aiservices-1020859675.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2023-07-01-preview"
 openai.api_version = "2023-07-01-preview"
-openai_api_key = st.secrets['OPENAI_API_KEY']
+openai_api_key = os.getenv('OPENAI_API_KEY')
 openai.api_key = openai_api_key
 
 
